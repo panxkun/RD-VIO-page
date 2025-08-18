@@ -34,8 +34,8 @@
 /* 全局字体设置 */
 body {
   font-family: 'AlibabaSans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
+  overflow-x: hidden;
+}
   padding: 0 20px;
 }
 
@@ -194,12 +194,25 @@ body {
 
 /* 页脚 */
 .footer {
-  background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem;
+  background-color: #fafafa !important;
+  padding: 3rem 0 6rem 0 !important;
+  width: 100vw !important;
+  margin: 0 !important;
+  margin-left: calc(-50vw + 50%) !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+.footer .footer-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 1.5rem !important;
+  position: relative !important;
 }
 
 .footer .content {
-  text-align: center;
+  text-align: center !important;
+  margin: 0 !important;
 }
 
 .footer .icon-link {
